@@ -50,6 +50,10 @@ return {
       },
     },
   },
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
   -- Inlay hints for those (0.8 <= neovim < 0.10)
   -- {
   --   "lvimuser/lsp-inlayhints.nvim",
