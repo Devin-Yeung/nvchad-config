@@ -33,3 +33,8 @@ nomap({ "n", "t" }, "<A-i>")
 
 -- open file search
 map("n", "<leader><leader>", "<cmd>Telescope find_files<cr>", { desc = "telescope find files" })
+
+-- lsp quick fix
+map("n", "<leader>qf", function()
+  vim.lsp.buf.code_action()
+end, { desc = "quick fix according to lsp suggestion" })
